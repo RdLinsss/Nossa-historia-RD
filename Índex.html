@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo & Daniela - Nossa História</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primaria: #ff6b6b; /* Vermelho alegre */
+            --secundaria: #4ecdc4; /* Turquesa vibrante */
+            --dourado: #c5a059;
+            --creme: #fdfaf5;
+            --texto: #333;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--creme);
+            color: var(--texto);
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+        }
+
+        header {
+            padding: 50px 20px;
+            background: white;
+            border-bottom: 5px solid var(--primaria);
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.8rem;
+            color: var(--primaria);
+            margin: 0;
+        }
+
+        .data-especial {
+            font-size: 1.3rem;
+            letter-spacing: 4px;
+            margin-top: 15px;
+            color: #777;
+            font-weight: 300;
+        }
+
+        .secao-titulo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 2.2rem;
+            color: #4a4a4a;
+            margin: 60px 0 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+            display: inline-block;
+        }
+
+        .galeria-mosaico {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .foto-item {
+            background: white;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .foto-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .foto-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .legenda {
+            margin-top: 15px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.9rem;
+            color: #555;
+        }
+
+        /* Destaque para as fotos de aliança */
+        .destaque {
+            border: 2px solid var(--dourado);
+        }
+
+        footer {
+            background: white;
+            padding: 80px 20px;
+            margin-top: 80px;
+            border-top: 1px solid #eee;
+        }
+
+        .coracao {
+            color: var(--primaria);
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        /* Responsividade para celulares */
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            .secao-titulo { font-size: 1.8rem; }
+            .legenda { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ricardo & Daniela</h1>
+        <div class="data-especial">NOSSA HISTÓRIA • DESDE 08/03</div>
+    </header>
+
+    <h2 class="secao-titulo">Simplesmente Nós</h2>
+    <div class="galeria-mosaico">
+        
+        <div class="foto-item">
+            <img src="bike_itau.jpg" alt="Rolê de bike">
+            <div class="legenda">Nossos melhores rolês... sempre juntos!</div>
+        </div>
+
+        <div class="foto-item">
+            <img src="cachoeira.jpg" alt="Beijo na cachoeira">
+            <div class="legenda">Recarregando as energias com você.</div>
+        </div>
+
+        <div class="foto-item destaque">
+            <img src="alianças_mirante.jpg" alt="Alianças no mirante">
+            <div class="legenda">Onde prometemos o mundo um para o outro.</div>
+        </div>
+
+        <div class="foto-item">
+            <img src="noite_carnaval.jpg" alt="Curtindo a noite">
+            <div class="legenda">Qualquer lugar é perfeito com você.</div>
+        </div>
+        
+    </div>
+
+    <h2 class="secao-titulo">O Nosso Grande Dia</h2>
+    <div class="galeria-mosaico">
+        
+        <div class="foto-item">
+            <img src="casamento_beijo.jpg" alt="O Sim formal">
+            <div class="legenda">O 'Sim' que mudou tudo.</div>
+        </div>
+
+        <div class="foto-item">
+            <img src="casamento_bolo.jpg" alt="Celebração R&D">
+            <div class="legenda">R & D: Para sempre.</div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Daniela, você é a minha melhor aventura,</p>
+        <p>minha calmaria e o meu eterno amor.</p>
+        <div class="coracao">♥️</div>
+        <p>Com todo o meu amor, Ricardo.</p>
+    </footer>
+
+</body>
+</html>
